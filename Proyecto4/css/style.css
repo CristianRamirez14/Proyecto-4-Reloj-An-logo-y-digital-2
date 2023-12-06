@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+}
+
+.Reloj {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/Reloj_Fondo.png");
+    background-size: cover;
+    box-shadow:
+    0 0 10px rgb(190, 8, 8),
+    0 0 21px rgb(190, 8, 8),
+    0 0 42px rgb(255, 0, 0),
+    0 0 82px rgb(53, 18, 18),
+    0 0 92px rgb(53, 18, 18),
+    0 0 102px rgb(53, 18, 18),
+    0 0 151px rgb(53, 18, 18);
+    border-radius: 50vh;
+}
+
+.Reloj::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgb(237, 129, 156);
+    border-radius: 50vh;
+    z-index: 100;
+}
+
+.Hora {
+    width: 140px;
+    height: 140px;
+}
+
+.Minuto {
+    width: 220px;
+    height: 220px;
+}
+
+.Segundo {
+    width: 250px;
+    height: 250px;
+}
+
+.Hora::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 90px;
+    background-color: beige;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.Minuto::before {
+    /*genera contenido de manera dinámica*/
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 130px;
+    background-color: rgb(226, 27, 76);
+    z-index: 11;
+    border-radius: 50vh;
+}
+
+.Segundo::before {
+    content: "";
+    position: absolute;
+    width: 1.8px;
+    height: 150px;
+    background-color: rgb(226, 27, 27);
+    z-index: 12;
+    border-radius: 50vh;
+}
+
+.Hora, .Minuto, .Segundo {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50vh;
+}
+
+.Digital {
+    box-shadow:
+    0 0 10px rgb(190, 8, 8),
+    0 0 21px rgb(190, 8, 8),
+    0 0 42px rgb(255, 0, 0),
+    0 0 82px rgb(53, 18, 18),
+    0 0 92px rgb(53, 18, 18),
+    0 0 102px rgb(53, 18, 18),
+    0 0 151px rgb(53, 18, 18);
+    width: 120px;
+    height: 35px;
+    margin-top: 155px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-family: monospace;
+    font-size: 1rem;
+    color: #fff;
+    text-shadow:
+    0 0 10px rgb(190, 8, 8),
+    0 0 21px rgb(190, 8, 8),
+    0 0 42px rgb(255, 0, 0),
+    0 0 82px rgb(53, 18, 18),
+    0 0 92px rgb(53, 18, 18),
+    0 0 102px rgb(53, 18, 18),
+    0 0 151px rgb(53, 18, 18);
+}
